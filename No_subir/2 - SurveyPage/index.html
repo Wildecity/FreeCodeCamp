@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Encuesta 2</h1>
+        <h3 class="description">Descripcion de la encuesta</h3>
+        <form class="survey-form">
+            <div class="survey-item">
+                <label id="survey-name" class="survey-item-title" for="name">Name</label>
+                <input type="text" name="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="survey-item">
+                <label id="survey-email" class="survey-item-title" for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="survey-item">
+                <label id="survey-age" class="survey-item-title" for="age">Age</label>
+                <input type="number" name="age" placeholder="Ingrese su edad">
+            </div>
+            <div class="survey-item">
+                <label id="survey-role" class="survey-item-title" for="role">Which option best describes your current role?</label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Seleccione una opción</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Full-time">Trabajo tiempo completo</option>
+                    <option value="Desempleado">Desempleado</option>
+                    <option value="Otro">Otro</option>
+                    <option value="NS/NC">NS/NC</option>
+                </select>
+            </div>
+            <div class="survey-item">
+                <p class="survey-item-title">Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input name="user-reco" class="input-radio" type="radio" value="Definitivamente" checked>Definitivamente
+                </label>
+                <label>
+                    <input name="user-reco" class="input-radio" type="radio" value="Tal vez">Tal vez
+                </label>
+                <label>
+                    <input name="user-reco" class="input-radio" type="radio" value="Nunca">Nunca
+                </label>
+            </div>
+            <div class="survey-item">
+                <label id="survey-fav" class="survey-item-title" for="role">What is your favorite feature of freeCodeCamp?</label>
+                <select id="most-like" name="favorite" class="form-control" required>
+                    <option disabled selected value>Seleccione una opción</option>
+                    <option value="Desafios">Desafios</option>
+                    <option value="Projectos">Projectos</option>
+                    <option value="Comunidad">Comunidad</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+            </div>
+            <div class="survey-item">
+                <p class="survey-item-title">What would you like to see improved?</p>
+                <label>
+                    <input name="user-improv" class="input-checkbox" type="checkbox" value="Definitivamente">Definitivamente
+                </label>
+                <label>
+                    <input name="user-improv" class="input-checkbox" type="checkbox" value="Tal vez">Tal vez
+                </label>
+                <label>
+                    <input name="user-improv" class="input-checkbox" type="checkbox" value="Nunca">Nunca
+                </label>
+            </div>
+            <div class="survey-item">
+                <p class="survey-item-title">Any comments or suggestions?</p>
+                <textarea name="sugerencias" id="sugerencias" placeholder="Escriba su sugerencia"></textarea>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
