@@ -1,30 +1,36 @@
-:root,
 ::after,
 ::before,
 * {
   box-sizing: border-box;
   margin: 0;
+  color: white;
+}
+
+body {
+  background: center / 100% repeat
+    url(https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .container {
   max-width: 750px;
-  margin: 0 auto;
-  padding: 1em 2.5em;
-  border: 1px solid black;
+  margin: 0.5rem auto;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  background-color: rgba(109, 109, 109, 0.226);
 }
 
 #title,
 #description {
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #survey-form {
   margin: 0 auto;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
   max-width: 500px;
-  border: 1px solid black;
-  border-radius: 0.5em;
+  border-radius: 10px;
 }
 
 .form-group {
@@ -42,22 +48,37 @@ input[type="email"],
 input[type="number"],
 select {
   width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin-right: 1em;
+  margin-right: 1rem;
   justify-self: center;
 }
 
-label,
-p {
+label {
   display: flex;
-  /* padding-bottom: 1em; */
 }
 
 textarea {
-  margin: 1em 0;
   width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
   resize: none;
+  color: black;
+}
+
+button {
+  display: block;
+  color: black;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem 0.3rem;
+  }
 }
