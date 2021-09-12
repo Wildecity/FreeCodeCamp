@@ -10,72 +10,92 @@
 </head>
 
 <body>
-    <h1 id="title">Titulo de la encuesta</h1>
-    <p id="description">Breve descripcion de la encuesta</p>
-    <form action="" id="survey-form">
-        <div class="form-group">
-            <label for="name" id="name-label">Nombre:</label>
-            <input type="text" id="name" name="name" value="" placeholder="Ingrese su nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="email" id="email-label">Ingrese su email</label>
-            <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
-        </div>
-        <div class="form-group">
-            <label for="number" id="number-label">Edad <span>(opcional)</span> </label>
-            <input type="number" name="age" id="number" min="1" max="99">
-        </div>
-        <div class="form-group">
-            <label for="dropdown">Elija su profesion:</label>
-            <select name="role" id="dropdown">
-                <option value="student">Estudiante</option>
-                <option value="unemployed">Desocupado</option>
-                <option value="fulltime">Empleado de tiempo completo</option>
-                <option value="parttime">Empleado de medio completo</option>
-                <option value="freelance">Freelance</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <p>Por que decidiste aprender a programar?</p>
-            <div class="option">
-                <input type="radio" name="motivation" id="job" value="Getjob">
-                <label for="job">Para conseguir empleo</label>
+    <div class="container">
+        <h1 id="title">Titulo de la encuesta</h1>
+        <h2 id="description">Breve descripcion de la encuesta</h2>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nombre:</label>
+                <input type="text" id="name" name="name" value="" placeholder="Ingrese su nombre" required>
             </div>
-
-            <div class="option">
-                <input type="radio" name="motivation" id="Personal" value="personal">
-                <label for="personal">Interes personal/Hobby</label>
+            <div class="form-group">
+                <label for="email" id="email-label">Ingrese su email</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
             </div>
-
-            <div class="option">
-                <input type="radio" name="motivation" id="Other" value="other">
-                <label for="other">Otra</label>
+            <div class="form-group">
+                <label for="number" id="number-label">Edad <span>(opcional)</span> </label>
+                <input type="number" name="age" id="number" min="1" max="99">
             </div>
-        </div>
-
-        <p>Que rama de la programacion web te interesa?</p>
-
-        <div class="option">
-            <label for="front">
-                <input type="checkbox" name="branch" id="front" value="frontend">
-                Frontend
-            </label>
-        </div>
-        <div class="option">
-            <label for="back">
-                <input type="checkbox" name="branch" id="back" value="backend">
-                Backend
-            </label>
-        </div>
-        <div class="option">
-            <label for="full">
-                <input type="checkbox" name="branch" id="full" value="fullstack">
-                Full-Stack
-            </label>
-        </div>
-        <button type="submit">Submit</button>
-
-    </form>
+            <div class="form-group">
+                <label for="dropdown">Elija su profesion:</label>
+                <select name="role" id="dropdown">
+                    <option value="student">Estudiante</option>
+                    <option value="unemployed">Desocupado</option>
+                    <option value="fulltime">Empleado de tiempo completo</option>
+                    <option value="parttime">Empleado de medio completo</option>
+                    <option value="freelance">Freelance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Por que decidiste aprender a programar?</p>
+                <div class="option">
+                    <input type="radio" name="motivation" id="job" value="Getjob">
+                    <label for="job">Para conseguir empleo</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="motivation" id="Personal" value="personal">
+                    <label for="personal">Interes personal / Hobby</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="motivation" id="Other" value="other">
+                    <label for="other">Otra</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Que rama de la programacion web te interesa?</p>
+                <div class="option">
+                    <label for="front">
+                        <input type="checkbox" name="branch" id="front" value="frontend">
+                        Frontend
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="back">
+                        <input type="checkbox" name="branch" id="back" value="backend">
+                        Backend
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="full">
+                        <input type="checkbox" name="branch" id="full" value="fullstack">
+                        Full-Stack
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Elija una opción:</p>
+                <div class="option">
+                    <input type="checkbox" name="opcion1" id="opcion1" value="valor1">
+                    <label for="opcion1">Opción 1</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="opcion2" id="opcion2" value="valor2">
+                    <label for="opcion2">Opción 2</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="opcion3" id="opcion3" value="valor3">
+                    <label for="opcion3">Opción 3</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Deje sus comentarios</p>
+                <textarea name="comments" id="comments" rows="10" placeholder="Que opinas de la encuesta?"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
