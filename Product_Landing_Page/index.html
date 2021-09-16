@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NOMADES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+
+        <div id="logowrapper">
+
+            <img src="" alt="" id="header-img">
+            <a id="logotitle" href="#home">NOMADES MOTO</a>
+
+        </div>
+        <nav id="nav-bar">
+            <!-- Linkear a cada seccion de la pagina -->
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <!-- Linkear a cada seccion de la pagina -->
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+
+                <h1>NOMADES MOTO</h1>
+                <img src="" alt="" id="hero-img">
+                <h2>Indumentaria y accesorios para motociclistas</h2>
+
+            </div>
+        </section>
+
+        <section id="nosotros">
+
+            <div class="container">
+                <h2>Sobre nosotros:</h2>
+            </div>
+
+        </section>
+
+        <section id="productos">
+
+            <div class="container">
+                <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/gVzUnasLAbA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="contacto">
+
+            <div class="container">
+                <h2>CONTACTENOS</h2>
+                <form id=form action="https://www.freecodecamp.com/email-submit">
+
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="sumensaje">Sus mensaje</label>
+                        <textarea name="sumensaje" id="sumensaje" rows="5" placeholder="Ingrese su mensaje aqui"
+                            required></textarea>
+                    </div>
+                    <!-- <button id="btn-enviar" type="submit">Enviar</button> -->
+                    <input id="submit" type="submit" value="Enviar"
+                        formaction="https://www.freecodecamp.com/email-submit">
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
